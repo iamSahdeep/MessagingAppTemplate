@@ -14,7 +14,7 @@ class Profile {
   factory Profile.fromJson(Map<String, dynamic> json) => Profile(
         id: json["id"],
         email: json["email"],
-        name: json["first_name"],
+        name: json["name"],
         avatar: json["avatar"],
       );
 
