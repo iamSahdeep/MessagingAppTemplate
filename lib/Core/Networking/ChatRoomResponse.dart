@@ -15,10 +15,11 @@ class MessagesResponse {
 
   final List<Message> messages;
 
+  //Changed for Test
   factory MessagesResponse.fromJson(Map<String, dynamic> json) =>
       MessagesResponse(
         messages: List<Message>.from(
-            json["messages"].map((x) => Message.fromJson(x))),
+            json["data"].map((x) => Message.fromJson(x))),
       );
 
   Map<String, dynamic> toJson() => {

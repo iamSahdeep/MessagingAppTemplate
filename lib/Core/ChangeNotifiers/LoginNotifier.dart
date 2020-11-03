@@ -14,7 +14,7 @@ class LoginNotifier extends ChangeNotifier {
   Future<void> handleLoginClick() async {
     try {
       final loginResponse = await _userRepository.loginUserWithDetails(
-          "sahdeepsingh98@gmail.com", "password");
+          "eve.holt@reqres.in", "cityslicka");
       if (loginResponse != null && loginResponse.token != null) {
         Utils.log(LoginScreen.TAG, "Login Saving Token", loginResponse.token);
         SharedPrefs.saveAuthToken(loginResponse.token);

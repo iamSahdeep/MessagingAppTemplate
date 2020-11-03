@@ -11,10 +11,11 @@ class Profile {
   final String name;
   final String avatar;
 
+  //Changed for Test
   factory Profile.fromJson(Map<String, dynamic> json) => Profile(
         id: json["id"],
         email: json["email"],
-        name: json["name"],
+        name: json["first_name"], // Used this
         avatar: json["avatar"],
       );
 

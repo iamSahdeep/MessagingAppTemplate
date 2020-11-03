@@ -13,8 +13,9 @@ class ProfileDetailsResponse {
 
   final Profile profile;
 
+  //Changed for Test
   factory ProfileDetailsResponse.fromJson(Map<String, dynamic> json) => ProfileDetailsResponse(
-    profile: Profile.fromJson(json["profile"]),
+    profile: Profile.fromJson(json["data"]),
   );
 
   Map<String, dynamic> toJson() => {

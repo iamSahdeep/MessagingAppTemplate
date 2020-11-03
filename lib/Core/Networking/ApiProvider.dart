@@ -51,9 +51,8 @@ class ApiProvider {
     try {
       final response = await http.get(
           ApiEndpoints.BaseURL +
-              ApiEndpoints.FriendsListEndPoint +
-              "/" +
-              page.toString(),
+              ApiEndpoints.FriendsListEndPoint,//Changed for Test
+
           headers: await _authHeaders());
       responseJson = _handleResponse(response);
     } on SocketException {
@@ -68,9 +67,7 @@ class ApiProvider {
     try {
       final response = await http.get(
           ApiEndpoints.BaseURL +
-              ApiEndpoints.MessagesEndPoint +
-              "/" +
-              id.toString(),
+              ApiEndpoints.MessagesEndPoint, // Changed for Test
           headers: await _authHeaders());
       responseJson = _handleResponse(response);
     } on SocketException {

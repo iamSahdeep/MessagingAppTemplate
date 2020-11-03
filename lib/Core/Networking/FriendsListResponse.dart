@@ -14,7 +14,7 @@ class FriendsListResponse {
   final List<Friend> friends;
 
   factory FriendsListResponse.fromJson(Map<String, dynamic> json) => FriendsListResponse(
-    friends: List<Friend>.from(json["friends"].map((x) => Friend.fromJson(x))),
+    friends: List<Friend>.from(json["data"].map((x) => Friend.fromJson(x))),
   );
 
   Map<String, dynamic> toJson() => {

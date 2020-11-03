@@ -11,10 +11,11 @@ class Friend {
   final String lastMessage;
   final String avatar;
 
+  //Changed for Test
   factory Friend.fromJson(Map<String, dynamic> json) => Friend(
-        friendId: json["friend_id"],
-        name: json["name"],
-        lastMessage: json["last_message"],
+        friendId: json["id"],
+        name: json["first_name"],
+        lastMessage: json["last_name"],  //Used last_name as last message
         avatar: json["avatar"],
       );
 
