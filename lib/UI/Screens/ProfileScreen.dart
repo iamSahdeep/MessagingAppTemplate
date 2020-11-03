@@ -29,7 +29,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
         key: _scaffoldKey,
         appBar: AppBar(
-          title: Text("List"),
+          title: Text("Profile"),
         ),
         body: Builder(
           builder: (ctx) {
